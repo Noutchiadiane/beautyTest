@@ -3,6 +3,7 @@ import { CiFacebook, CiLinkedin } from 'react-icons/ci';
 import { BsInstagram } from 'react-icons/bs';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { footerLinks } from '../constants';
+import { apple, playStore } from '../assets';
 export default function Footer() {
 
 
@@ -70,9 +71,9 @@ export default function Footer() {
           <div className="  text-white sm:grid-cols-2 lg:pt-2 col-span-2 p-x-8">
             <h1 className="font-bold text-3xl mb-10">Application</h1>
             <div className='flex justify-between'>
-              <FooterStore text1={"GET IN ON THE "} text2={"Google Play"} iconLink={"/src/assets/download-removebg-preview.png"} />
+              <FooterStore text1={"GET IN ON THE "} text2={"Google Play"} iconLink={playStore} />
 
-              <FooterStore text1={"Download in the "} text2={"App Store"} iconLink={"/src/assets/647529-removebg-preview.png "} />
+              <FooterStore text1={"Download in the "} text2={"App Store"} iconLink={apple} />
             </div>
             <div className="flex justify-around text-yellow-400 mt-6">
               <CiFacebook size={"32px"} />

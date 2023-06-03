@@ -19,7 +19,7 @@ export default function GeneralLayout() {
   return (
     <div className="bg-slate-100" >
       <main id="content" className="w-full  ">
-        <div className="lg:fixed md:static bg-white dark:bg-main-dark-bg navbar w-full ">
+        <div className="lg:fixed lg:top-0 md:static bg-white dark:bg-main-dark-bg navbar w-full ">
           <Navbar />
         </div>
         <Routes>
