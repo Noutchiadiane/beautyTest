@@ -83,45 +83,64 @@ const Landing = () => {
   );
   return (
 
-    <div className="mt-[75px]  relative">
+    <div className="mt-[75px] w-screen relative">
       <section id="features" className={`h-screen w-full   relative flex items-end justify-center bgStart text-center my-4`}>
         <div className="z-20 w-[90%] mb-[90px]">
           <h2 className="text-white text-[30px] font-bold text-center uppercase mt-5">
             Find the best beauty professional?
           </h2>
-          <div className=" rounded-[15px] bg-white justify-between mt-5 flex p-2  ">
-            <div>
-              <span className="p-input-icon-left">
-                <i className="pi pi-search" ></i>
-                <InputText placeholder="Service, stylist, Salon" className="max-w-[150px] border-r-1" />
-              </span>
+          <div className=" rounded-[15px] bg-white lg:justify-between mt-5 lg:flex p-2   grid gap-y-3  ">
+            <div className="flex justify-between w-full">
+              <div>
+                <span className="p-input-icon-left">
+                  <i className="pi pi-search" ></i>
+                  <InputText placeholder="Service, stylist, Salon" className="max-w-[150px] border-r-1" />
+                </span>
+              </div>
+              <div className="w-[1px] bg-slate-200" > {""} </div>
+              <div>
+                <span className="p-input-icon-left">
+                  <BiMap />
+                  <InputText placeholder="Where? " className="max-w-[150px]" />
+                </span>
+              </div>
             </div>
-            <div className="w-[1px] bg-slate-200" > {""} </div>
-            <div>
-              <span className="p-input-icon-left">
-                <BiMap />
-                <InputText placeholder="Where? " className="max-w-[150px]" />
-              </span>
-            </div>
-            <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
-              placeholder="Select a City" className=" mr-2 border-black" />
+            <div className="lg:flex md:flex grid gap-y-3 lg:justify-between md:justify-between">
+              <div>
+                <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                  placeholder="Select a City" className=" mr-2 border-black" />
+              </div>
+              <div>
+                <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                  placeholder="Best Match" className=" bg-yellow-500 border-none text-white mr-2" />
+              </div>
+              <div>
+                <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                  placeholder="Best Match" className=" bg-yellow-500 border-none text-white mr-2" />
+              </div>
+              <div>
+                <Calendar value={date} onChange={(e) => setDate(e.value)} showIcon className=" max-w-[200px] mr-2 calendarYellow bg-yellow-500 rounded" />
 
-            <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
-              placeholder="Best Match" className=" bg-yellow-500 border-none text-white mr-2" />
+              </div>
+              <div>
+                <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                  placeholder="Extra" className=" mr-2 border-black" />
+              </div>
 
-            <Calendar value={date} onChange={(e) => setDate(e.value)} showIcon className=" max-w-[200px] mr-2 calendarYellow bg-yellow-500 rounded" />
-            <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
-              placeholder="Extra" className=" mr-2 border-black" />
-            <div className="flex min-w-[100px]">
-              <span className="flex items-center">
-                <TbAdjustmentsHorizontal />
-                <p>Filter</p>
-              </span>
-            </div>
-            <div className="flex items-center text-yellow-400 mr-2 ">
-              <BiSearch size={"32px"} />
             </div>
 
+            <div className="lg:flex lg:mt-3 md:flex sm:block justify-between">
+              <div className="flex min-w-[100px] justify-center ">
+                <span className="flex items-center">
+                  <TbAdjustmentsHorizontal />
+                  <p>Filter</p>
+                </span>
+              </div>
+              <div className="flex items-center justify-center text-yellow-400 mr-2 ">
+                <BiSearch size={"32px"} />
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -130,15 +149,15 @@ const Landing = () => {
         </div>
       </section>
       <section id="features" className="mt-16 relative px-6">
-      <div className=" absolute top-0 right-2">
-        <div className="w-[40px] h-[40px]  mb-3 text-center rounded-[50%] bg-primary flex justify-center items-center  text-white">
-          <TbWorld size={"32px"} />
+        <div className=" absolute top-0 right-2">
+          <div className="w-[40px] h-[40px]  mb-3 text-center rounded-[50%] bg-primary flex justify-center items-center  text-white">
+            <TbWorld size={"32px"} />
+          </div>
+          <div className="w-[40px] h-[40px] text-center rounded-[50%] bg-yellow-500 flex justify-center items-center  text-white">
+            <MdPersonAddAlt size={"32px"} />
+          </div>
         </div>
-        <div className="w-[40px] h-[40px] text-center rounded-[50%] bg-yellow-500 flex justify-center items-center  text-white">
-          <MdPersonAddAlt size={"32px"} />
-        </div>
-      </div>
-        <div className="  grid  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 w-full place-items-center ">
+        <div className="  grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full place-items-center ">
           <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
           <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
@@ -184,51 +203,51 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section id="features" className={layout.section} >
-
-
-        <div className={layout.sectionImg}>
-          <img src={"/src/data/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
-        </div>
-        <div className={layout.sectionInfo}>
-          <h2 className={styles.heading2}>
-            A social nectwork that connect expertise and customers
-          </h2>
-          <div className="">
-            <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1">
-              Our commitment
-            </h4>
-            <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[12px]`}>
-              With the right credit card, you can improve your financial life by
-              building credit, earning rewards and saving money. But with hundreds
-              of credit cards on the market.
-              With the right credit card, you can improve your financial life by
-              building credit, earning rewards and saving money. But with hundreds
-              of credit cards on the market.
-            </p>
-            <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1 mt-3">
-              The garantie at the customer
-            </h4>
-            <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[12px]`}>
-              With the right credit card, you can improve your financial life by
-              building credit, earning rewards and saving money. But with hundreds
-              of credit cards on the market.
-            </p>
-            <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1 mt-3">
-              The garantie at the provider
-            </h4>
-
-            <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[12px]`}>
-              With the right credit card, you can improve ing money. But with hundreds
-              of credit cards on the market.
-              With the right credit card, you can improve your financial life by
-              building credit, earning rewards and saving money. But with hundreds
-              of credit cards on the market.
-            </p>
+      <section id="features" className="flex justify-center">
+        <div className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.paddingY} w-[95%] sm:text-center`}>
+          <div className={layout.sectionImg}>
+            <img src={"/src/data/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
           </div>
+          <div className={layout.sectionInfo}>
+            <h2 className={styles.heading2}>
+              A social nectwork that connect expertise and customers
+            </h2>
+            <div className="w-full ">
+              <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1">
+                Our commitment
+              </h4>
+              <p className={`${styles.paragraph}  mt-3 text-[12px]`}>
+                With the right credit card, you can improve your financial life by
+                building credit, earning rewards and saving money. But with hundreds
+                of credit cards on the market.
+                With the right credit card, you can improve your financial life by
+                building credit, earning rewards and saving money. But with hundreds
+                of credit cards on the market.
+              </p>
+              <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1 mt-3">
+                The garantie at the customer
+              </h4>
+              <p className={`${styles.paragraph}  mt-3 text-[12px]`}>
+                With the right credit card, you can improve your financial life by
+                building credit, earning rewards and saving money. But with hundreds
+                of credit cards on the market.
+              </p>
+              <h4 className="font-poppins  text-black text-[16px] font-semibold leading-[23.4px] mb-1 mt-3">
+                The garantie at the provider
+              </h4>
+
+              <p className={`${styles.paragraph}  mt-3 text-[12px]`}>
+                With the right credit card, you can improve ing money. But with hundreds
+                of credit cards on the market.
+                With the right credit card, you can improve your financial life by
+                building credit, earning rewards and saving money. But with hundreds
+                of credit cards on the market.
+              </p>
+            </div>
 
 
-          <Button styles={`mt-10`} />
+            <Button styles={`mt-10`} />
+          </div>
         </div>
       </section>
       <section id="features" className="flex justify-center">
@@ -248,7 +267,7 @@ const Landing = () => {
 
 
       </section>
-      <section id="features" className="flex justify-center lg:mb-32  ">
+      <section id="features" className="flex justify-center lg:mb-32 sm:mb-16 mb-8  ">
         <div className="w-[90%] bg-white shadow-2xl md:px-16 lg:px-[200px] px-6 py-9">
           <h2 className={`${styles.heading2} text-center`}>
             Find your beauty specialist by city
@@ -290,7 +309,7 @@ const Landing = () => {
         </div>
 
       </section>
-      
+
     </div>
   );
 };
