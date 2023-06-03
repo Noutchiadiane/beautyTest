@@ -17,7 +17,7 @@ body{
     display: none;
 }
 .bgStart{
-    background-image: url("/src/data/preview-8.jpg") ;
+    background-image: url("/src/assets/preview-8.jpg") ;
     background-repeat:no-repeat;
     background-size:cover
 }

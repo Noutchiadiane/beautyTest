@@ -62,7 +62,7 @@ const Landing = () => {
   );
   const CarouselTemplate = (nugget) => (
     <div className="flex w-[400px] h-[200px] shadow-xl border rounded-[15px]  bg-white mx-3 " >
-      <img src={"/src/data/preview-10.jpg"} alt="billing" className="w-[40%] h-[100%] object-cover" />
+      <img src={"/src/assets/preview-10.jpg"} alt="billing" className="w-[40%] h-[100%] object-cover" />
       <div className="w-full">
         <div className='text-center mt-14'>
           <p className='font-bold text-black' > {nugget.name} </p>
@@ -158,29 +158,29 @@ const Landing = () => {
           </div>
         </div>
         <div className="  grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full place-items-center ">
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} available={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} available={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} available={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
-          <Booking img1={"/src/data/avatar2.jpg"} img2={"/src/data/avatar3.png"}
+          <Booking img1={"/src/assets/avatar2.jpg"} img2={"/src/assets/avatar3.png"}
             location={"1841 Hardman Road , Vermont"} name={"Brice Vaughn "} booknow={true} commingDate={"01:27:00 min"} />
 
 
@@ -206,7 +206,7 @@ const Landing = () => {
       <section id="features" className="flex justify-center">
         <div className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.paddingY} w-[95%] sm:text-center`}>
           <div className={layout.sectionImg}>
-            <img src={"/src/data/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
+            <img src={"/src/assets/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
           </div>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
@@ -261,7 +261,7 @@ const Landing = () => {
             ))}
           </div>
           <div className={layout.sectionImg}>
-            <img src={"/src/data/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
+            <img src={"/src/assets/verctor_mage.png"} alt="billing" className="w-[90%] h-[100%] object-contain" />
           </div>
         </div>
 
