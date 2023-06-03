@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+@import "primereact/resources/themes/lara-light-indigo/theme.css";     
+@import "primeicons/primeicons.css";
+
+@import "primereact/resources/primereact.min.css";                                       
+        
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    background-color: rgb(242,246,249);
+}
+.p-carousel-indicators {
+    display: none;
+}
+.bgStart{
+    background-image: url("/src/data/preview-8.jpg") ;
+    background-repeat:no-repeat;
+    background-size:cover
+}
+.p-inputtext {
+
+border: none; 
+background: transparent;
+
+ 
+}
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+
+    color: #E10984;
+}
+.p-button {
+
+    border: none; 
+    background: transparent;
+    
+     
+    }
+      .p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
+     background: transparent;
+    }
+.calendarYellow .p-calendar-w-btn-right .p-inputtext {
+    background-color: yellow;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
